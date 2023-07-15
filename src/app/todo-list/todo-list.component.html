@@ -1,0 +1,46 @@
+<div class="panel panel-default col-xs-5 todo-list-panel">
+	<div class="panel-heading">
+		<div class="row">
+			<div class="col-xs-12">
+				<div
+					class="panel panel-default col-xs-12 todo-list-header-panel"
+				>
+					<div class="panel-heading">
+						<div class="row">
+							<span class="title pad-left-right">Todo Items</span>
+						</div>
+						<div class="row">
+							<div
+								class="input-group pull-left pad-left-right col-xs-8"
+							>
+								<input
+									type="text"
+									class="form-control"
+									placeholder="Enter a search value"
+									#searchBox
+									(keyup)="search(searchBox.value)"
+								/>
+								<div
+									class="glyphicon glyphicon-search input-group-addon search-icon"
+								></div>
+							</div>
+							<div class="pull-right pad-left-right">
+								<a
+									class="btn btn-success new-item-button"
+									[routerLink]="['new']"
+									>New Item</a
+								>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="panel-body">
+		<app-todo-item
+			*ngFor="let todoEl of todos | todosFilter: term"
+			[todo]="todoEl"
+		></app-todo-item>
+	</div>
+</div>

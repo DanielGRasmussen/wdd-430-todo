@@ -1,0 +1,17 @@
+.todo-list-panel {
+	padding: 0;
+	margin-left: 9%;
+}
+
+.todo-list-header-panel {
+	background: transparent;
+}
+
+.search-icon {
+	top: 0;
+}
+
+.new-item-button {
+	width: 100px;
+	height: 34px;
+}

@@ -1,0 +1,10 @@
+.todo-edit-panel {
+	padding: 0;
+	margin-left: 50px;
+}
+
+.description {
+	text-align: left;
+	max-width: 100%;
+	min-width: 100%;
+}

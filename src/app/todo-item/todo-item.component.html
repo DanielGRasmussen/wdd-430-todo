@@ -1,0 +1,12 @@
+<a
+	class="list-group-item clearfix"
+	[routerLink]="todo.id"
+	routerLinkActive="active"
+>
+	<div class="pull-left">
+		<h3 class="list-group-item-heading">{{ todo.title }}</h3>
+	</div>
+	<div class="pull-right">
+		<span class="label label-default">{{ todo.status }}</span>
+	</div>
+</a>
